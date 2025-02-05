@@ -1,8 +1,4 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
-
-:root {
-    line-height: 1.5;
-}
   
 h1, h2, h3, h4, h5, figure, p, ol, ul {
     margin: 0;
@@ -44,11 +40,11 @@ svg {
 }
 
 .main {
-    grid-template-rows: 1fr 15fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .content {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -60,6 +56,7 @@ svg {
 .bottom-header {
     justify-content: start;
     align-items: center;
+    grid-auto-flow: column;
 }
 
 .card-container {
