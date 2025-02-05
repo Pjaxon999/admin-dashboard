@@ -22,3 +22,52 @@ img {
     display: block;
     max-inline-size: 100%;
 }
+
+svg {
+    height: 10px;
+    width: 10px;
+}
+
+
+.main,
+.content,
+.wrapper,
+.header,
+.top-header,
+.bottom-header,
+.card-container {
+    display: grid;    
+}
+
+.wrapper {                                                                                                                                          
+    grid-template-columns: 1fr 4fr;
+}
+
+.main {
+    grid-template-rows: 1fr 15fr;
+}
+
+.content {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header {
+    grid-template-rows: 1fr 1fr;
+}
+
+.top-header,
+.bottom-header {
+    justify-content: start;
+    align-items: center;
+}
+
+.card-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
