@@ -1,17 +1,26 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
+
+* {
+    font-family: "Roboto", serif;
+}
   
 h1, h2, h3, h4, h5, figure, p, ol, ul {
     margin: 0;
 }
   
-ol[role="list"], ul[role="list"] {
-    list-style: none;
-    padding-inline: 0;
-}
-  
 h1, h2, h3, h4, h5 {
     font-size: inherit;
     font-weight: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding:0;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
 }
   
 img {
@@ -19,11 +28,18 @@ img {
     max-inline-size: 100%;
 }
 
-svg {
-    height: 10px;
-    width: 10px;
+.icon {
+    height: 20px;
 }
 
+.large-icon {
+    height: 40px;
+}
+
+.icon-trending {
+    height: 20px;
+    float: left;
+}
 
 .main,
 .content,
@@ -33,6 +49,11 @@ svg {
 .bottom-header,
 .card-container {
     display: grid;    
+}
+
+.sidebar {
+    background-color: #1F3EDB;
+    color: #fff;
 }
 
 .wrapper {                                                                                                                                          
@@ -46,6 +67,7 @@ svg {
 .content {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: #dbdad9;
 }
 
 .header {
@@ -62,6 +84,11 @@ svg {
 .card-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project-card,
+.side-card {
+    background: #fff;
 }
 
 .trending {
