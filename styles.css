@@ -15,17 +15,26 @@ h1, h2, h3, h4, h5 {
 
 ul {
     list-style-type: none;
-    padding:0;
+    padding:10px;
+    margin-top: 20px;
 }
 
 ul a {
     color: white;
     text-decoration: none;
 }
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
   
 img {
     display: block;
     max-inline-size: 100%;
+    border-radius: 50%;
+    height: 50px;
 }
 
 .icon {
@@ -36,59 +45,80 @@ img {
     height: 40px;
 }
 
-.icon-trending {
-    height: 20px;
-    float: left;
-}
-
 .main,
 .content,
 .wrapper,
 .header,
-.top-header,
-.bottom-header,
 .card-container {
     display: grid;    
+}
+
+.top-header,
+.bottom-header,
+.greeting,
+.search-area,
+.dashboard,
+.utility-buttons,
+.sidebar,
+.notifications {
+    display: flex;
+}
+
+.greeting,
+.notifications,
+.dashboard,
+.search-area,
+.utility-buttons {
+    align-items: center;
+}
+
+.wrapper {                                                                                                                                          
+    grid-template: auto 4fr/ 1fr 4fr;
 }
 
 .sidebar {
     background-color: #1F3EDB;
     color: #fff;
+    flex-flow: column nowrap;
 }
 
-.wrapper {                                                                                                                                          
-    grid-template-columns: 1fr 4fr;
+.top-header,
+.bottom-header {
+    justify-content:space-between ;
 }
+
+
 
 .main {
     grid-template-rows: 1fr 5fr;
 }
 
 .content {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
     background-color: #dbdad9;
 }
 
-.header {
+
+header {
     grid-template-rows: 1fr 1fr;
 }
 
-.top-header,
-.bottom-header {
-    justify-content: start;
-    align-items: center;
-    grid-auto-flow: column;
+.your-projects {
+    margin-left: 20px;
 }
 
 .card-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .project-card,
 .side-card {
     background: #fff;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .trending {
