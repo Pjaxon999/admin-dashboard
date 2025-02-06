@@ -35,7 +35,7 @@ img {
     display: block;
     max-inline-size: 100%;
     border-radius: 50%;
-    height: 5em;
+    height: 3em;
 }
 
 input[type="search"] {
@@ -44,6 +44,15 @@ input[type="search"] {
     background-color: #dbdad9;
     width: 40vw;
     margin-left: 1em;
+}
+
+button {
+    padding: .5em 1.5em;
+    border-radius: 1em;
+    height: 4ch;
+    border: none;
+    color: #fff;
+    background-color: #1F3EDB;
 }
 
 .icon {
@@ -116,6 +125,15 @@ input[type="search"] {
     margin-left: 1em;
 }
 
+.notifications,
+.greeting {
+    gap: 1.5em;
+}
+
+.utility-buttons {
+    gap: 2em;
+}
+
 .content {
     grid-template-columns: 3fr 1fr;
     gap: 2em;
@@ -162,7 +180,6 @@ input[type="search"] {
     grid-row: 2 / 3;
 }
 
-
 #large-profile {
-    height: 5em;
+    height: 4em;
 }
