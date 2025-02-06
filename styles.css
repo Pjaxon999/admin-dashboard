@@ -15,8 +15,7 @@ h1, h2, h3, h4, h5 {
 
 ul {
     list-style-type: none;
-    padding:10px;
-    margin-top: 20px;
+    margin-top: 1em;
 }
 
 ul a {
@@ -27,28 +26,38 @@ ul a {
 li {
     display: flex;
     align-items: center;
-    padding: 10px;
+    gap: 1rem;
+    padding: 0.5em 0;
+    cursor: pointer;
 }
   
 img {
     display: block;
     max-inline-size: 100%;
     border-radius: 50%;
-    height: 50px;
+    height: 5em;
+}
+
+input[type="search"] {
+    border-radius: 20px;
+    border: none;
+    background-color: #dbdad9;
+    width: 40vw;
 }
 
 .icon {
-    height: 20px;
+    height: 1.5em;
 }
 
 .large-icon {
-    height: 40px;
+    height: 3em;
 }
 
 .main,
 .content,
 .wrapper,
 .header,
+.project-card,
 .card-container {
     display: grid;    
 }
@@ -63,6 +72,7 @@ img {
 .notifications {
     display: flex;
 }
+
 
 .greeting,
 .notifications,
@@ -79,15 +89,18 @@ img {
 .sidebar {
     background-color: #1F3EDB;
     color: #fff;
-    flex-flow: column nowrap;
+    flex-direction: column;
+}
+
+.dashboard {
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .top-header,
 .bottom-header {
-    justify-content:space-between ;
+    justify-content: space-between;
 }
-
-
 
 .main {
     grid-template-rows: 1fr 5fr;
@@ -114,11 +127,22 @@ header {
     gap: 20px;
 }
 
+.card-icons {
+}
+
+.project-card {
+    box-shadow: inset 0.5em 0 0 gold,
+    0.2em 0.2em 0.2em rgba(0,0,0,0.3);
+}
+
 .project-card,
 .side-card {
     background: #fff;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 1em;
+}
+
+.side-card {
+    box-shadow: 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
 }
 
 .trending {
