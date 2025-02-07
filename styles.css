@@ -10,7 +10,19 @@ h1, h2, h3, h4, h5, figure, p, ol, ul {
   
 h1, h2, h3, h4, h5 {
     font-size: inherit;
-    font-weight: inherit;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 0.9em;
+}
+
+p {
+    font-weight: 300;
 }
 
 ul {
@@ -29,6 +41,7 @@ li {
     gap: 1rem;
     padding: 0.5em 0;
     cursor: pointer;
+    font-weight: bold;
 }
   
 img {
@@ -60,13 +73,14 @@ button {
 }
 
 .large-icon {
-    height: 3em;
+    height: 2em;
 }
 
 .main,
 .content,
 .wrapper,
 .header,
+.right-side,
 .card-container {
     display: grid;    
 }
@@ -79,6 +93,7 @@ button {
 .utility-buttons,
 .sidebar,
 .project-card,
+.card-icons,
 .notifications {
     display: flex;
 }
@@ -107,6 +122,7 @@ button {
 }
 
 .dashboard {
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
 }
@@ -125,6 +141,10 @@ button {
     margin-left: 1em;
 }
 
+.greeting p {
+    font-weight: bold;
+}
+
 .notifications,
 .greeting {
     gap: 1.5em;
@@ -136,6 +156,7 @@ button {
 
 .content {
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     gap: 2em;
     background-color: #dbdad9;
 }
@@ -164,20 +185,28 @@ button {
 }
 
 .text-block {
-    padding: 1em;
+    padding: 2em;
 }
 
 .card-icons {
     align-self: flex-end;
+    gap: 1em;
+    padding: 1em;
+    cursor: pointer;
 }
 
 .side-card {
     box-shadow: 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
 }
 
-.trending {
+.announcements p,
+.trending p {
+    font-size: 0.9em
+}
+
+.right-side {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 #large-profile {
