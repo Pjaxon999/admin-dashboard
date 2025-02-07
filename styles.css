@@ -81,6 +81,7 @@ button {
 .wrapper,
 .header,
 .right-side,
+.your-projects,
 .card-container {
     display: grid;    
 }
@@ -122,8 +123,7 @@ button {
 }
 
 .content-heading {
-    padding-top: 2em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
 }
 
 .profile {
@@ -144,6 +144,7 @@ button {
 
 .main {
     grid-template-rows: 1fr 7fr;
+    max-height: 100%;
 }
 
 .search-area {
@@ -171,7 +172,7 @@ button {
 }
 
 .your-projects {
-    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
 .card-container {
@@ -213,6 +214,11 @@ button {
 .announcements p,
 .trending p {
     font-size: 0.9em
+}
+
+.announcements h2,
+.trending h2 {
+    padding-bottom: 1rem;
 }
 
 .right-side {
