@@ -93,7 +93,9 @@ button {
 .utility-buttons,
 .sidebar,
 .project-card,
+.side-card,
 .card-icons,
+.friends,
 .notifications {
     display: flex;
 }
@@ -103,6 +105,7 @@ button {
 .notifications,
 .dashboard,
 .search-area,
+.friends,
 .utility-buttons {
     align-items: center;
 }
@@ -115,6 +118,12 @@ button {
     background-color: #1F3EDB;
     color: #fff;
     flex-direction: column;
+    gap: 1rem;
+}
+
+.content-heading {
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .profile {
@@ -175,6 +184,8 @@ button {
 .side-card {
     background: #fff;
     border-radius: 1em;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-card {
@@ -207,6 +218,14 @@ button {
 .right-side {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+}
+
+.friends {
+    padding-left: 2em;
+}
+
+.trending-text {
+    padding: 1em
 }
 
 #large-profile {
